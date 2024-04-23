@@ -22,7 +22,7 @@
     "paths": {
       "tdesign-miniprogram/*": [
         "./miniprogram/miniprogram_npm/tdesign-miniprogram/*"
-      ]
+      ],
     }
   },
   "include": ["./**/*.ts"],

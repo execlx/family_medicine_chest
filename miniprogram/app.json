@@ -1,7 +1,6 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/index/index"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -14,6 +13,9 @@
       "sdkVersionBegin": "3.0.0",
       "sdkVersionEnd": "15.255.255"
     }
+  },
+  "usingComponents": {
+    "t-navbar": "tdesign-miniprogram/navbar/navbar"
   },
   "componentFramework": "glass-easel",
   "sitemapLocation": "sitemap.json",

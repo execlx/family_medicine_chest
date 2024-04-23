@@ -22,7 +22,7 @@
       </block>
     </view>
     <view class="usermotto">
-      <text class="user-motto">{{motto}}</text>
+     <t-button theme="primary">按钮</t-button>
     </view>
   </view>
 </scroll-view>

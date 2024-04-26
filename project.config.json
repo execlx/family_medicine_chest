@@ -26,8 +26,9 @@
     "showShadowRootInWxmlPanel": false,
     "ignoreUploadUnusedFiles": true,
     "compileHotReLoad": false,
-    "skylineRenderEnable": true,
-    "es6": true
+    "skylineRenderEnable": false,
+    "es6": true,
+    "condition": true
   },
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},

@@ -1,6 +1,8 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/medicine/index",
+    "pages/plan/index"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -15,6 +17,7 @@
     }
   },
   "usingComponents": {
+    "antd-container": "antd-mini/Container/index",
     "t-navbar": "tdesign-miniprogram/navbar/navbar"
   },
   "componentFramework": "glass-easel",

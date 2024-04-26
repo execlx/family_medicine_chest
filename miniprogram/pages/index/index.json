@@ -3,8 +3,8 @@
     "home": "../../components/home",
     "medicine": "../../components/medicine",
     "mine": "../../components/mine",
-    "t-tab-bar": "tdesign-miniprogram/tab-bar/tab-bar",
-    "t-tab-bar-item": "tdesign-miniprogram/tab-bar-item/tab-bar-item",
-    "t-navbar": "tdesign-miniprogram/navbar/navbar"
+    "container": "antd-mini/Container/index",
+    "tab-bar": "antd-mini/TabBar/index",
+    "ant-button": "antd-mini/Button/index"
   }
 }

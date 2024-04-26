@@ -3,5 +3,19 @@
   "projectname": "family_medicine_chest",
   "setting": {
     "compileHotReLoad": true
+  },
+  "libVersion": "3.4.1",
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "计划详情",
+          "pathName": "pages/plan/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
   }
 }

@@ -1,2 +1,6 @@
-<!--pages/home/index.wxml-->
-<text>pages/home/index.wxml</text>
+<view>
+    <view></view>
+
+    <t-fab icon="add" bind:click="handleAddPlan" aria-label="添加计划" style="bottom: 66px;"></t-fab>
+
+</view>

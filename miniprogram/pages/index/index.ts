@@ -1,17 +1,39 @@
 // pages/index/index.ts
+interface Tab {
+  value: string;
+  icon: string;
+  activeIcon: string;
+  text: string;
+}
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    value: 'home',
+    current: 0,
     ariaLabel: '首页',
-    list: [
-      { value: 'home', icon: 'home', ariaLabel: '首页' },
-      { value: 'medicine', icon: 'app', ariaLabel: '药品' },
-      { value: 'mine', icon: 'user', ariaLabel: '我的' },
-    ],
+    tabs: [
+      {
+          value: 'plan', 
+          icon: 'UnorderedListOutline',
+          activeIcon: 'UnorderedListOutline',
+          text: '服药计划',
+      },
+      {
+          value: 'medicine',
+          icon: 'ShopbagOutline',
+          activeIcon: 'ShopbagOutline',
+          text: '药箱管理',
+      },
+      {
+          value: 'mine',
+          icon: 'SetOutline',
+          activeIcon: 'SetOutline',
+          text: '个人中心',
+      },
+  ] as [Tab],
   },
 
   /**
@@ -43,13 +65,16 @@ Page({
   },
 
   onChange(e: any) {
-    const value = e.detail.value;
-    const ariaLabel = this.data.list.find((item: any) => item.value === value)?.ariaLabel;
-    this.setData({
-      value,
-      ariaLabel,
-    });
+    
   },
+
+  handleChange(index: any) {
+
+    const current = index.detail;
+    const ariaLabel = this.data.tabs[current].text;
+    this.setData({ current, 
+      ariaLabel, });
+},
 
   /**
    * 生命周期函数--监听页面卸载

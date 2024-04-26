@@ -23,6 +23,9 @@
       "tdesign-miniprogram/*": [
         "./miniprogram/miniprogram_npm/tdesign-miniprogram/*"
       ],
+      "antd-mini/*": [
+        "./miniprogram/miniprogram_npm/antd-mini/*"
+      ],
     }
   },
   "include": ["./**/*.ts"],

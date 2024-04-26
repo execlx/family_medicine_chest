@@ -1,0 +1,19 @@
+<!--pages/plan/index.wxml-->
+<view class="page">
+  <t-navbar title="{{ariaLabel}}" t-class-title="nav-title" left-arrow bind:go-back="handleBack"/>
+  <view class="plan_container">
+  <form catchsubmit="formSubmit" catchreset="formReset">
+    <t-input label="标签文字" placeholder="请输入文字" value="已输入文字" status="error" tips="辅助说明" />
+
+  </form>
+    <!-- 这里放置你的计划内容 -->
+  </view>
+   <ant-button
+    type="default"
+    onTap="handleTap">
+    次要按钮
+  </ant-button>
+<view class="plan_save">
+  <t-button theme="primary" size="large" block>保存</t-button>
+</view>
+</view>

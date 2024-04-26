@@ -5,9 +5,10 @@
     <medicine wx:if="{{value === 'medicine'}}"></medicine> 
     <mine wx:if="{{value === 'mine'}}"></mine>
   </view>
-  <t-tab-bar value="{{value}}" bindchange="onChange" theme="tag" split="{{false}}">
-    <t-tab-bar-item wx:for="{{list}}" wx:key="index" value="{{item.value}}" icon="{{item.icon}}" ariaLabel="{{item.ariaLabel}}">
-      {{item.ariaLabel}}
-    </t-tab-bar-item>
-  </t-tab-bar>
-</view>
+
+
+  <tab-bar
+    items="{{ tabs }}"
+    current="{{ value }}"
+    bind:change="handleChange" />
+  </view>

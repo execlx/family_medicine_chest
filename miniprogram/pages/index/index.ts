@@ -16,24 +16,24 @@ Page({
     ariaLabel: '首页',
     tabs: [
       {
-          value: 'plan', 
-          icon: 'UnorderedListOutline',
-          activeIcon: 'UnorderedListOutline',
-          text: '服药计划',
+        value: 'plan',
+        icon: 'UnorderedListOutline',
+        activeIcon: 'UnorderedListOutline',
+        text: '服药计划',
       },
       {
-          value: 'medicine',
-          icon: 'ShopbagOutline',
-          activeIcon: 'ShopbagOutline',
-          text: '药箱管理',
+        value: 'medicine',
+        icon: 'ShopbagOutline',
+        activeIcon: 'ShopbagOutline',
+        text: '药箱管理',
       },
       {
-          value: 'mine',
-          icon: 'SetOutline',
-          activeIcon: 'SetOutline',
-          text: '个人中心',
+        value: 'mine',
+        icon: 'SetOutline',
+        activeIcon: 'SetOutline',
+        text: '个人中心',
       },
-  ] as [Tab],
+    ] as unknown as [Tab],
   },
 
   /**
@@ -62,10 +62,6 @@ Page({
    */
   onHide() {
 
-  },
-
-  onChange(e: any) {
-    
   },
 
   handleChange(index: any) {

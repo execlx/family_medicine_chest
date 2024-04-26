@@ -1,2 +1,20 @@
 <!--pages/medicine/index.wxml-->
-<text>pages/medicine/index.wxml</text>
+<view class=".medicine">
+  <t-dropdown-menu>
+  <t-dropdown-item
+    label="{{medicineStatus.label}}"
+    options="{{medicineStatus.options}}"
+    value="{{medicineStatus.value}}"
+    bindchange="handleMedicineSelect"
+    multiple
+  />
+  <t-dropdown-item
+    label="{{familyMember.label}}"
+    optionsColumns="2"
+    options="{{familyMember.options}}"
+    value="{{familyMember.value}}"
+    bindchange="handleMemberSelect"
+    multiple
+  />
+  </t-dropdown-menu>
+</view>

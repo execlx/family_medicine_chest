@@ -1,7 +1,6 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/medicine/index",
     "pages/plan/index"
   ],
   "window": {

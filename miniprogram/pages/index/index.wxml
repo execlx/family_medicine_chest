@@ -1,12 +1,10 @@
 <view class="page">
-  <t-navbar title="{{ariaLabel}}" t-class-title="nav-title" />
+  <t-navbar title="{{ariaLabel}}" t-class="nav-bar" />
   <view class="tab-bar__content">
-    <home wx:if="{{value === 'home'}}"></home>
-    <medicine wx:if="{{value === 'medicine'}}"></medicine> 
-    <mine wx:if="{{value === 'mine'}}"></mine>
+    <home wx:if="{{current === 0}}"></home>
+    <medicine wx:if="{{current === 1}}"></medicine> 
+    <mine wx:if="{{current === 2}}"></mine>
   </view>
-
-
   <tab-bar
     items="{{ tabs }}"
     current="{{ value }}"

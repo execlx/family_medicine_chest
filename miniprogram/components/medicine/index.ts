@@ -1,9 +1,15 @@
-// pages/medicine/index.ts
+import IMedicine from "../../models/medicine";
 Component({
   /**
    * 组件的属性列表
    */
-  properties: {},
+  properties: {
+    medicineList: [{
+      name: '感冒灵',
+      expirationDate: '2022-01-01',
+      quantity: 10,
+    }] as IMedicine[]
+  },
 
   /**
    * 组件的初始数据
@@ -11,7 +17,7 @@ Component({
   data: {
     medicineStatus: {
       label: '药品状态',
-      value: ["all"],
+      value: `all`,
       options: [
         {
           label: `全部`,
@@ -19,7 +25,7 @@ Component({
           disabled: false,
         },
         {
-          label: `保质期内`,
+          label: `未过期`,
           value: `no_outdated`,
           disabled: false,
         },
@@ -60,13 +66,13 @@ Component({
   methods: {
     handleMedicineSelect(e: any) {
       this.setData({
-        "multipleSelect.value": e.detail.value,
+        "medicineStatus.value": e.detail.value,
       });
     },
 
     handleMemberSelect(e: any) {
       this.setData({
-        "multipleSelect.value": e.detail.value,
+        "familyMember.value": e.detail.value,
       });
     }
   },

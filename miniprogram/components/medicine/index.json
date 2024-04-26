@@ -2,6 +2,8 @@
   "component": true,
   "usingComponents": {
     "t-dropdown-menu": "tdesign-miniprogram/dropdown-menu/dropdown-menu",
-    "t-dropdown-item": "tdesign-miniprogram/dropdown-item/dropdown-item"
+    "t-dropdown-item": "tdesign-miniprogram/dropdown-item/dropdown-item",
+    "c-medicine-item": "./item/index",
+    "antd-container": "antd-mini/Container/index"
   }
 }

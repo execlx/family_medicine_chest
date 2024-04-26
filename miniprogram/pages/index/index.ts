@@ -1,3 +1,5 @@
+import IMedicine from "../../models/medicine";
+
 // pages/index/index.ts
 interface Tab {
   value: string;
@@ -34,6 +36,17 @@ Page({
         text: '个人中心',
       },
     ] as unknown as [Tab],
+
+    medicineList: [{
+      name: '感冒灵',
+      expirationDate: '2022-01-01',
+      quantity: 10,
+      desc: '感冒发烧',
+    }, {
+      name: '布洛芬',
+      expirationDate: '2022-02-01',
+      quantity: 10,
+      desc: '头痛',}] as IMedicine[],
   },
 
   /**

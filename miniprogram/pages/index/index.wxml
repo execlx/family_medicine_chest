@@ -2,7 +2,7 @@
   <t-navbar title="{{ariaLabel}}" t-class="nav-bar" />
   <view class="tab-bar__content">
     <home wx:if="{{current === 0}}"></home>
-    <medicine wx:if="{{current === 1}}"></medicine> 
+    <medicine wx:if="{{current === 1}}" medicineList="{{medicineList}}"></medicine> 
     <mine wx:if="{{current === 2}}"></mine>
   </view>
   <tab-bar

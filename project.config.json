@@ -1,7 +1,7 @@
 {
   "miniprogramRoot": "./dist",
-  "projectname": "family_medicine",
-  "description": "家庭智能药箱管理",
+  "projectname": "smart_medicine",
+  "description": "家庭智慧药箱管理",
   "appid": "touristappid",
   "setting": {
     "urlCheck": true,

@@ -1,9 +1,10 @@
 import Components from 'unplugin-vue-components/webpack';
 import NutUIResolver from '@nutui/auto-import-resolver';
+const { UnifiedWebpackPluginV5 } = require('weapp-tailwindcss/webpack')
 
 const config = {
-  projectName: 'family_medicine',
-  date: '2024-7-16',
+  projectName: 'smart_medicine',
+  date: '2024-6-25',
   designWidth (input) {
     if (input?.file?.replace(/\\+/g, '/').indexOf('@nutui') > -1) {
       return 375
@@ -36,7 +37,8 @@ const config = {
     data: `@import "@nutui/nutui-taro/dist/styles/variables.scss";`
   },
   mini: {
-    webpackChain(chain) {
+    webpackChain(chain, webpack) {
+      // 配置 unplugin-vue-components 插件
       chain.plugin('unplugin-vue-components').use(Components({
         resolvers: [
           NutUIResolver({
@@ -44,8 +46,21 @@ const config = {
             taro: true
           })
         ]
-      }))
+      }));
+    
+      // 合并 UnifiedWebpackPluginV5 插件的配置
+      chain.merge({
+        plugin: {
+          install: {
+            plugin: UnifiedWebpackPluginV5,
+            args: [{
+              appType: 'taro'
+            }]
+          }
+        }
+      });
     },
+    
     postcss: {
       pxtransform: {
         enable: true,
@@ -53,6 +68,14 @@ const config = {
           // selectorBlackList: ['nut-']
         }
       },
+      // htmltransform: {
+      //   enable: true,
+      //   // 设置成 false 表示 不去除 * 相关的选择器区块
+      //   // 假如开启这个配置，它会把 tailwindcss 整个 css var 的区域块直接去除掉
+      //   config: {
+      //     removeCursorStyle: false,
+      //   },
+      // },
       url: {
         enable: true,
         config: {

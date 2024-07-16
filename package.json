@@ -38,6 +38,8 @@
   "author": "",
   "dependencies": {
     "@babel/runtime": "^7.7.7",
+    "@iconify-json/ep": "^1.1.15",
+    "@iconify-json/mdi": "^1.1.67",
     "@nutui/icons-vue-taro": "^0.0.9",
     "@nutui/nutui-taro": "^4.3.0",
     "@tarojs/components": "3.6.32",
@@ -58,6 +60,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.8.0",
+    "@egoist/tailwindcss-icons": "^1.8.1",
     "@nutui/auto-import-resolver": "^1.0.0",
     "@tarojs/cli": "3.6.32",
     "@tarojs/taro-loader": "3.6.32",

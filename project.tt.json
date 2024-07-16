@@ -1,0 +1,13 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "family_medicine",
+  "description": "家庭智能药箱管理",
+  "appid": "touristappid",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "postcss": false,
+    "minified": false
+  },
+  "compileType": "miniprogram"
+}
